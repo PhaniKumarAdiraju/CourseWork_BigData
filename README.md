@@ -4,7 +4,7 @@ This is a repository for my CS 698 Big Data course work at New Jersey Institute 
 
 # Table of Contents 
 
-1. Finding Relative Frequency of words in a 100K wiki text file [a link](https://github.com/PhaniKumarAdiraju/CourseWork_BigData/tree/master/Relative%20Frequency)
-2. Analyze 20 years of flight data  [a link](https://github.com/PhaniKumarAdiraju/CourseWork_BigData/tree/master/FlightProject)
+1. [Finding Relative Frequency of words in a 100K wiki text file](https://github.com/PhaniKumarAdiraju/CourseWork_BigData/tree/master/Relative%20Frequency)
+2. [Analyze 20 years of flight data](https://github.com/PhaniKumarAdiraju/CourseWork_BigData/tree/master/FlightProject)
 
 More details on each of these assignments is with in the particular directory's readme file.
