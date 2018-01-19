@@ -6,8 +6,10 @@ In this assignment, I worked on a set of 100,000 Wikipedia documents: 100KWikiTe
 2. Developed a MapReduce-based approach in Hadoop system to compute the relative frequencies of each word that occurs in all the documents in 100KWikiText.txt, and output the top 100 word pairs sorted in a decreasing order of relative frequency. 
 3. Repeat the above steps using at least 2 VM instances in Hadoop system running in a fully-distributed mode.
 
-# Input: 100KWikiText.txt 
-# Output: Top 100 Wordpairs with their relative frequency.
+# Input: 
+100KWikiText.txt 
+# Output: 
+Top 100 Wordpairs with their relative frequency.
 
 # Algorithm Steps:
 1.	Create a mapper, combiner and reducer
@@ -27,27 +29,27 @@ In this assignment, I worked on a set of 100,000 Wikipedia documents: 100KWikiTe
 # Execution in Pseudo Distributed Mode
 
 1) Format The NameNode:
- $ /bin/Hadoop namenode -format
+ `/bin/Hadoop namenode -format`
 
 2) Start Hadoop Services:
- $ /sbin/start-all.sh
+ `/sbin/start-all.sh`
 
 3) Put the Text File and jar in a folder on the HDFS:
- $ hadoop fs -mkdir /home/ec2-user/Practice
- $ hadoop fs -put 100KWikiText.txt /home/ ec2-user/Practice
- $ hadoop fs -put paircount4.jar /home/ ec2-user/Practice
+  `hadoop fs -mkdir /home/ec2-user/Practice`
+  `hadoop fs -put 100KWikiText.txt /home/ ec2-user/Practice`
+  `hadoop fs -put paircount4.jar /home/ ec2-user/Practice`
 
 4) Execute the jar file:
- $ /home/ec2-user/hadoop-2.7.3/bin/hadoop jar paircount4.jar PairCount1  100KWikiText.txt PCwiki4
+  `/home/ec2-user/hadoop-2.7.3/bin/hadoop jar paircount4.jar PairCount1  100KWikiText.txt PCwiki4`
 
 5) View the output
- $ hadoop fs -cat /home/ec2-user/Practice/PCwiki4 /top100.txt
+  `hadoop fs -cat /home/ec2-user/Practice/PCwiki4 /top100.txt`
 
 # Execution in Fully Distributed Mode
 
 
 1) Create Another Slave EC2 instance on AWS and install hadoop on all the nodes
- $ tar -xzvf hadoop-2.7.2.tar.gz
+  `tar -xzvf hadoop-2.7.2.tar.gz`
 
 2) Configure the hadoop/etc/hadoop/core-site.xml:
 <configuration>
