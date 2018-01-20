@@ -1,4 +1,4 @@
-# Analyze Flight data of 20 years 
+# Analyze Flight data of 22 years 
 In this project, I developed an Oozie workflow to process and analyze a large volume of flight data. I developed three map reduce jobs to analyze the flight data: 
 1. the 3 airlines with the highest and lowest probability, respectively, for being on schedule
 2. the 3 airports with the longest and shortest average taxi time per flight (both in and out) respectively
